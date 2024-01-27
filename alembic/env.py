@@ -7,7 +7,14 @@ from alembic import context
 from app.models import Base
 from app.config import settings_db, settings
 
+import os
 
+
+database_name = os.environ.get("DATABASE_NAME")
+database_password = os.environ.get("DATABASE_PASSWORD")
+database_hostname = os.environ.get("DATABASE_HOSTNAME")
+database_port = os.environ.get("DATABASE_PORT")
+database_username = os.environ.get("DATABASE_USERNAME")
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
