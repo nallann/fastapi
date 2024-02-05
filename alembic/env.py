@@ -12,10 +12,11 @@ from app.config import settings_db, settings
 # access to the values within the .ini file in use.
 config = context.config
 config.set_main_option(name="sqlalcehmy.url",
-                       value="postgresql://test_api_db:PXn6RysVV6wPapUT2laz7MZa9sfdXRel@dpg-cl86k8auuipc73enmmhg-a.singapore-postgres.render.com:5432/test_api_db_user")
+                       value="postgresql://test_api_db_user:PXn6RysVV6wPapUT2laz7MZa9sfdXRel@dpg-cl86k8auuipc73enmmhg-a.singapore-postgres.render.com:5432/test_api_db")
 
 
 # f"postgresql://{database_name}:{database_password}@{database_hostname}:{database_port}/{database_username}"
+# Render has db_name and db_uname reversed
 
 # Interpret the config file for Python logging.
 # This line sets up loggers basically.
