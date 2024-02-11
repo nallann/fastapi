@@ -30,6 +30,8 @@ app.include_router(auth.router)
 app.include_router(vote.router)
 
 
+# TRY PRINTING CONFIG FROM ALEMBIC ENV.PY, CHECK LOGS
+
 @app.get("/")
 def root():
     return {"message": "Welcome to my API"}

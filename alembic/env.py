@@ -12,9 +12,11 @@ from app.config import settings_db, settings
 # access to the values within the .ini file in use.
 config = context.config
 config.set_main_option(name="sqlalcehmy.url",
-                       value="postgresql://test_api_db_user:PXn6RysVV6wPapUT2laz7MZa9sfdXRel@dpg-cl86k8auuipc73enmmhg-a.singapore-postgres.render.com:5432/test_api_db")
+                       value="postgresql://test_api_db_user:1dQKLOGLSbzSAhkSkNnS0N48dX4jszTz@dpg-cn47ftgcmk4c73elk2o0-a.singapore-postgres.render.com/test_api_db_h4gj")
 
 
+# for some reason set_main_option doesnt do anything to the var in ini file. print before after config val
+# before: postgresql://test_api_db_user:PXn6RysVV6wPapUT2laz7MZa9sfdXRel@dpg-cl86k8auuipc73enmmhg-a.singapore-postgres.render.com:5432/test_api_db
 # f"postgresql://{database_name}:{database_password}@{database_hostname}:{database_port}/{database_username}"
 # Render has db_name and db_uname reversed
 
